@@ -110,7 +110,7 @@ section{
 .message {
     position: relative;
     z-index: 1;
-    top: -150px;
+    top: -140px;
     font-weight: 300;
     font-style:italic;
     text-align: center;
