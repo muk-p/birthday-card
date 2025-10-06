@@ -151,17 +151,23 @@ video{
     cursor: pointer;
     z-index: 20;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
+  #cake {
+    transform: scale(0.8);
+    margin-top: -6em;
+  }
+
   .message {
-    top: -60px; /* Move message higher (less overlap) */
+    top: -80px; /* closer to cake, but no overlap */
     font-size: 0.9em;
-    padding: 0 10px;
+  }
+
+  .birthday-card {
+    justify-content: flex-start; /* align top */
+    padding-top: 2em;
+    height: 100vh;
+    overflow: hidden;
   }
 }
 
-@media (max-width: 480px) {
-  .message {
-    top: 20px; /* Push it below the cake */
-    position: relative;
-  }
-}
