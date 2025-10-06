@@ -151,3 +151,17 @@ video{
     cursor: pointer;
     z-index: 20;
 }
+@media (max-width: 768px) {
+  .message {
+    top: -60px; /* Move message higher (less overlap) */
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    top: 20px; /* Push it below the cake */
+    position: relative;
+  }
+}
