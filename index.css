@@ -31,15 +31,14 @@ section{
 .velas {
   background: #ffffff;
   border-radius: 10px;
-  position: absolute; /* 🔄 was fixed */
-  top: -35px; /* 🔧 adjust candle position relative to cake top */
+  position: fixed;
+  top: 220px;
   left: 50%;
   width: 5px;
   height: 35px;
-  transform: translateX(-50%); /* center horizontally */
+  transform: translateY(-300px);
   backface-visibility: hidden;
-  animation: none; /* 🔄 remove translateY animation */
-  z-index: 10; /* always above the cake */
+  animation: in 500ms 6s ease-out forwards;
 }
 
 .velas:after,
@@ -165,6 +164,10 @@ video{
     font-size: 0.9em;
   }
 
+    .velas {
+        top:250px;
+    }
+    
   .birthday-card {
     justify-content: flex-start; /* align top */
     padding-top: 2em;
